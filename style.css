@@ -1,0 +1,247 @@
+/* Use a dark background color and a light font color */
+body {
+    background: linear-gradient(rgba(38, 36, 36, 0.673), rgba(43, 42, 42, 0.755)), url(img/FB_IMG_1665657773237.jpg);
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 800px;
+    width: 800px;
+}
+
+/* Center the app container and set a max-width */
+.app {
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 800px;
+    width: 800px;
+}
+
+/* Style the app title */
+h2 {
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+/* Style the input header */
+.input-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Style the date */
+#date {
+    font-size: 1.2rem;
+    font-weight: 5;
+}
+
+/* Style the todo input */
+.todo-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Style the input field */
+#item {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Style the enter button */
+#enter {
+    width: 10%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00b894;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s; /* add a smooth transition */
+}
+
+/* Style the enter button on hover */
+#enter:hover {
+    width: 15%; /* increase the width */
+    height: 50px; /* increase the height */
+    background-color: #0984e3; /* change the background color */
+    color: #fff; /* keep the text color */
+    font-size: 1.2rem; /* increase the font size */
+    font-weight: 700; /* increase the font weight */
+    box-shadow: 0 0 10px #0984e3; /* add a shadow effect */
+}
+
+
+/* Style the todo list */
+.todolist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the todo item */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style the input controller */
+.input-controller {
+    width: 80%;
+}
+
+/* Style the textarea */
+textarea {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    color: wheat;
+    font-size: 2rem;
+}
+
+/* Style the edit controller */
+.edit-controller {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Style the icons */
+.fa-solid {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Style the delete icon */
+[deleteBtn] {
+    color: #26f62a;
+}
+
+/* Style the update controller */
+.update-controller {
+    display: none;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Style the buttons */
+.saveBtn,
+.cancelBtn {
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Style the save button */
+.saveBtn {
+    background-color: #00b894;
+    color: #fff;
+}
+
+/* Style the cancel button */
+.cancelBtn {
+    background-color: #dfe6e9;
+    color: #222;
+}
+
+.dzaky h3{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    font-weight: 400;
+}
+
+/* Use media queries to make the app responsive */
+@media (max-width: 600px) {
+    /* Reduce the font size of the app title */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Reduce the width of the input field and the enter button */
+    #item {
+        width: 70%;
+    }
+
+    #enter {
+        width: 25%;
+    }
+
+    /* Reduce the width of the input controller and the edit controller */
+    .input-controller {
+        width: 70%;
+    }
+
+    .edit-controller {
+        width: 25%;
+    }
+
+    /* Reduce the width of the update controller */
+    .update-controller {
+        width: 25%;
+    }
+}
+
+
+
+/* style the date element */
+#date {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* style the animation */
+  @keyframes date {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #date {
+    animation: date 3s ease-in-out infinite;
+  }
+  
